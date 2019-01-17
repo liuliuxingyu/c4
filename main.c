@@ -1,8 +1,21 @@
 #include <stdio.h>
 char arr[1024];
 int index=0;
+int isMingan(char x){
+    int count=0;
+    for(int i=0;i<index;i++){
+        if(x==count){
+            count++;
+        }
+    }
+    if(count==0){
+        return 0;
+    }else{
+        return 1;
+    }
+}
 int main(){
-    printf("minganzifuguanlixitong");
+    printf("minganzifuguanlixitong\n");
     while(1){
         printf("1---tianjiaminganzifu\n");
         printf("2---shanchuminganzifu(zuihouyige)\n");
@@ -36,7 +49,7 @@ int main(){
             
         }
          if(code==3){
-             printf("suoyouminganzifuruxia\n");
+             printf("suoyouminganzifuruxia:\n");
              for(int i=0;i<index;i++){
                  printf("di%dgeminganzifuwei:%c\n",i+1,arr[i]);
              }
@@ -47,9 +60,33 @@ int main(){
             
         }
          if(code==4){
+             printf("qingshuruyiduanyingwen:\n");
+             int neriong[1024];
+             scanf("%s",neriong);
+             for(int i=0;1;i++){
+                 if(neriong[i]=='\0'){
+                     break;
+                 }
+                 if(isMingan(neriong[i])==1){
+                 neriong[i]='*';
+             }
+             printf("%c",neriong[i]);
+                 
+             }
+             printf("\n");
+             printf("tihuanchenggong,dianjihuichejixu\n");
+              char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
+            
+             
+
             
         }
          if(code==5){
+             printf("tuichu\n");
+             break;
+             
             
         }
     }
