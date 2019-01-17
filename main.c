@@ -36,6 +36,14 @@ int main(){
             
         }
          if(code==3){
+             printf("suoyouminganzifuruxia\n");
+             for(int i=0;i<index;i++){
+                 printf("di%dgeminganzifuwei:%c\n",i+1,arr[i]);
+             }
+             printf("chakanchenggong,dianjihuichejixu\n");
+             char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
             
         }
          if(code==4){
